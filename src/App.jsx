@@ -55,10 +55,7 @@ export default function App() {
         borderRadius: "16px", width: "500px"
       }}>
         <h1 style={{ color: "#2D6A4F", marginBottom: "8px" }}>🌱 OrbitAgro</h1>
-        <p style={{ color: "#aaa", marginBottom: "24px" }}>
-          Análise Inteligente da Lavoura 
-        </p>
-
+      
         <label style={{ color: "#fff", display: "block" }}>Tipo de Cultura</label>
         <select onChange={e => setCultura(e.target.value)} style={inputStyle}>
           <option value="">Selecione</option>

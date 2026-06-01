@@ -1,3 +1,4 @@
+import ReactMarkdown from 'react-markdown';
 import { useState } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 
@@ -111,7 +112,9 @@ export default function App() {
             padding: "20px", color: "#fff", lineHeight: "1.6"
           }}>
             <strong style={{ color: "#2D6A4F" }}>Recomendação da IA:</strong>
-            <p style={{ marginTop: "8px", whiteSpace: "pre-wrap" }}>{resposta}</p>
+            <div style={{ marginTop: "12px" }}>
+              <ReactMarkdown>{resposta}</ReactMarkdown>
+            </div>
           </div>
         )}
       </div>
